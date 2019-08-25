@@ -29,7 +29,8 @@ todos.push({id: 1, title: "Task1"});
 todos.push({id: 2, title: "Task2"});
 
 ReactDOM.render(
-    <Provider store={{todos}}>
+    /*Provider向context中注入store对象*/
+    <Provider store={todos}>
         <App />
     </Provider>,
     document.getElementById("root")
